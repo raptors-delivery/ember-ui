@@ -15,7 +15,7 @@ export default class CurrencySelectComponent extends Component {
 
         let whois = this.currentUser.getOption('whois');
 
-        this.currency = this.args.currency ?? this.args.value ?? whois?.currency?.code ?? 'USD';
+        this.currency = this.args.currency ?? this.args.value ?? whois?.currency?.code ?? 'EGP';
         this.currencyData = this.args.currencyData ?? getCurrency(this.currency);
     }
 
